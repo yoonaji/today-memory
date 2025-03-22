@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: yoona
+    password: 0000
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # create / create-drop / update / validate / none
+    show-sql: true       # 콘솔에 SQL 출력
+    properties:
+      hibernate:
+        format_sql: true # SQL 예쁘게 출력
+
+server:
+  port: 8080
