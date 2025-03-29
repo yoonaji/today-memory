@@ -1,10 +1,7 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/mydb
-    username: yoona
-    password: 0000
 
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update  # create / create-drop / update / validate / none
     show-sql: true       # 콘솔에 SQL 출력
